@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Organic Apples",
+    "brand": "Nature Farm",
+    "category": "grocery",
+    "price": 4.99,
+    "description": "Fresh organic apples."
+  },
+  {
+    "title": "Cotton T-Shirt",
+    "brand": "BasicWear",
+    "category": "clothing",
+    "price": 15.99,
+    "description": "Soft 100% cotton t-shirt."
+  },
+  {
+    "title": "Wireless Mouse",
+    "brand": "TechPro",
+    "category": "electronics",
+    "price": 25.5,
+    "description": "Ergonomic wireless optical mouse."
+  },
+  {
+    "title": "Ceramic Coffee Mug",
+    "brand": "HomeEssentials",
+    "category": "home-decor",
+    "price": 12.99,
+    "description": "16oz ceramic coffee mug."
+  },
+  {
+    "title": "Building Blocks Set",
+    "brand": "PlayTime",
+    "category": "toys",
+    "price": 35.0,
+    "description": "500-piece colorful brick set."
+  }
+]
