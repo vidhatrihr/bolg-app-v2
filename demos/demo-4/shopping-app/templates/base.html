@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Demo Store</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a> | <a href="/cart">Cart</a> | <a href="/analytics">Analytics</a>
+    </nav>
+
+    <hr>
+    {% block content %}{% endblock %}
+    <hr>
+
+    <footer>
+      {% if g.is_new_visitor %}
+        <p>Welcome New Visitor!</p>
+      {% else %}
+        <p>Hello again!! Welcome back.</p>
+      {% endif %}
+      <p>Debug Tracking UUID: {{ g.tracking_uuid }}</p>
+    </footer>
+  </body>
+</html>
