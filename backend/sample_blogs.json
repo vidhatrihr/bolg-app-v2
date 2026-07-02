@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Getting Started with Vue 3",
+    "slug": "getting-started-with-vue-3",
+    "description": "A beginner-friendly introduction to Vue 3 and the Composition API.",
+    "content": "Vue 3 is a progressive JavaScript framework for building user interfaces. It is designed from the ground up to be incrementally adoptable.\n\nThe Composition API is one of the biggest additions in Vue 3. Instead of using the Options API (data, methods, computed as separate object keys), you write all your logic inside a single setup() function - or more conveniently with the script setup syntax.\n\nHere is why beginners should start with Vue 3:\n\n1. Simple and readable syntax\n2. Great documentation on vuejs.org\n3. Vite as the build tool makes hot reload blazing fast\n4. The ecosystem around it (Vue Router, Pinia) is clean and well-maintained\n\nTo get started, just run: npm create vite@latest my-app -- --template vue\n\nThat creates a fresh project in seconds. From there, open App.vue and start building.",
+    "author_email": "vidu@example.com",
+    "comments": [
+      {
+        "content": "Great intro! This helped me understand the Composition API.",
+        "user_email": "vishnu@example.com"
+      }
+    ]
+  },
+  {
+    "title": "Why SQLite is Perfect for Learning",
+    "slug": "why-sqlite-is-perfect-for-learning",
+    "description": "SQLite requires zero setup. Here is why it is the best database to learn on.",
+    "content": "When you are learning backend development, the last thing you want is to spend an hour setting up a database server. SQLite solves that.\n\nSQLite is a serverless database. There is no daemon to start, no port to configure, no credentials to manage. The entire database is a single file on disk.\n\nWith Flask and SQLAlchemy, you connect to it with one line:\nSQLAlchemy_DATABASE_URI = \"sqlite:///app.db\"\n\nThat is it. SQLAlchemy creates the file automatically on first run.\n\nFor learning projects, SQLite is good enough. You get full SQL support, foreign keys, indexes, transactions - everything you need to understand how relational databases work.\n\nWhen you eventually move to production, switching to PostgreSQL is mostly a config change. The SQLAlchemy models stay the same.\n\nSo for learners: ignore PostgreSQL for now. Start with SQLite. Get your app working. Learn the concepts. Scale later.",
+    "author_email": "vishnu@example.com",
+    "comments": [
+      {
+        "content": "I had no idea SQLite was this simple to set up. Thanks!",
+        "user_email": "vidu@example.com"
+      }
+    ]
+  },
+  {
+    "title": "Flask in Five Minutes",
+    "slug": "flask-in-five-minutes",
+    "description": "The absolute minimum you need to know to build a Flask REST API.",
+    "content": "Flask is a micro web framework for Python. Micro does not mean it lacks features - it means it gives you the minimum and lets you add what you need.\n\nA basic Flask app looks like this:\n\nfrom flask import Flask\napp = Flask(__name__)\n\n@app.route('/hello')\ndef hello():\n    return 'Hello, World!'\n\nThat is a working web server. Run it with python app.py and visit http://localhost:5000/hello in your browser.\n\nFor a REST API, you return JSON instead of plain text. Flask makes this easy with the jsonify() function.\n\nFlask also integrates well with extensions:\n- flask-sqlalchemy for database access\n- flask-login for session management\n- flask-cors for cross-origin requests from your frontend\n\nThese three extensions, combined with Flask itself, are enough to build a full authentication system and data API. That is exactly what this blog app uses.",
+    "author_email": "vidu@example.com",
+    "comments": [
+      {
+        "content": "Flask really is that simple. Loved this overview.",
+        "user_email": "vishnu@example.com"
+      }
+    ]
+  }
+]
